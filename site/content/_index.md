@@ -1,7 +1,4 @@
 ---
-title: "RoRam Leaders in cleaning services"
-subtitle: Ask yourself if what you are doing for your home today is getting you closer to the home you want tomorrow.
-
 
 blurb:
     heading: Why RoRam?
