@@ -11,9 +11,14 @@
   <!-- Incluir los estilos de Slick Carousel (puedes cambiar la URL según tu caso) -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <style>
+    /* Estilos para el contenedor del carrusel */
+    .carousel {
+      width: 100%; /* Ocupar el 100% del ancho disponible en la página */
+    }
+    
     /* Estilos para las imágenes dentro del carrusel */
     .carousel img {
-      max-width: 800px; /* Ancho máximo de las imágenes */
+      max-width: 100%; /* Redimensionar automáticamente las imágenes para ajustarse al contenedor */
       height: auto; /* Altura automática para mantener la proporción */
     }
   </style>
@@ -37,7 +42,7 @@
       $('.carousel').slick({
         autoplay: true, // Habilitar el autoplay
         autoplaySpeed: 3000, // Definir el tiempo de transición en milisegundos (3 segundos en este ejemplo)
-      })
+      });
     });
   </script>
 </body>
