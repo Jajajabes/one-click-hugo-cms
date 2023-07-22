@@ -21,14 +21,36 @@
       max-width: 100%; /* Redimensionar automáticamente las imágenes para ajustarse al contenedor */
       height: auto; /* Altura automática para mantener la proporción */
     }
+    
+    /* Estilos para las flechas de navegación */
+    .slick-prev,
+    .slick-next {
+      font-size: 0; /* Ocultar el texto de las flechas */
+      background-color: #ccc; /* Color de fondo de las flechas */
+      color: #fff; /* Color del texto de las flechas */
+      width: 40px; /* Ancho de las flechas */
+      height: 40px; /* Altura de las flechas */
+      line-height: 40px; /* Alinear el texto verticalmente en las flechas */
+      border-radius: 50%; /* Forma redonda para las flechas */
+      position: absolute; /* Posición absoluta para ubicar las flechas en los laterales */
+      top: 50%; /* Alinear verticalmente en el centro */
+      transform: translateY(-50%); /* Alinear verticalmente en el centro */
+    }
+    
+    .slick-prev {
+      left: 10px; /* Ubicar la flecha izquierda a 10px del borde izquierdo */
+    }
+    
+    .slick-next {
+      right: 10px; /* Ubicar la flecha derecha a 10px del borde derecho */
+    }
   </style>
 </head>
 <body>
   <div class="carousel">
-    <div><img src="/img/four.jpeg" alt="Imagen 1"></div>
-    <div><img src="/img/one.jpg" alt="Imagen 2"></div>
-    <div><img src="/img/tree.png" alt="Imagen 3"></div>
-    <div><img src="/img/two.jpg" alt="Imagen 4"></div>
+    <div><img src="imagen1.jpg" alt="Imagen 1"></div>
+    <div><img src="imagen2.jpg" alt="Imagen 2"></div>
+    <div><img src="imagen3.jpg" alt="Imagen 3"></div>
     <!-- Agrega más imágenes dentro de 'div' si deseas tener más fotos en el carrusel -->
   </div>
   
@@ -42,6 +64,8 @@
       $('.carousel').slick({
         autoplay: true, // Habilitar el autoplay
         autoplaySpeed: 3000, // Definir el tiempo de transición en milisegundos (3 segundos en este ejemplo)
+        prevArrow: '<button type="button" class="slick-prev">◀</button>', // Flecha izquierda
+        nextArrow: '<button type="button" class="slick-next">▶</button>', // Flecha derecha
       });
     });
   </script>
