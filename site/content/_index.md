@@ -1,10 +1,11 @@
 ---
-title: "Great coffee with a conscience"
-subtitle: Support sustainable farming while enjoying a cup
-image: /img/home-jumbotron.jpg
+title: "RoRam Leaders in cleaning services"
+subtitle: Ask yourself if what you are doing for your home today is getting you closer to the home you want tomorrow.
+
+
 blurb:
-    heading: Why Kaldi?
-    text: "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities."
+    heading: Why RoRam?
+    text: "Choose RoRam Cleaning Services and experience exceptional home cleaning services. We stand out for our highly trained team, use of eco-friendly products and attention to detail to ensure a welcoming and healthy environment in your home. We value your time and comfort, tailoring our service to your needs. By trusting us, you get the peace of mind of having passionate professionals taking care of your home. Join our family of satisfied customers and discover the pleasure of returning to a spotless home. At RoRam Cleaning Services, we transform cleaning into an experience that will bring you joy every day, contact us now and discover the difference!"
 intro:
     heading: "What we offer"
     text: "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone."
