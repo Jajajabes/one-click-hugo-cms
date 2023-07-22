@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +12,15 @@
     /* Estilos para el contenedor del carrusel */
     .carousel {
       width: 100%; /* Ocupar el 100% del ancho disponible en la página */
+      max-height: 500px; /* Establecer una altura máxima para el carrusel (ajusta este valor según tus necesidades) */
+      overflow: hidden; /* Ocultar contenido que desborda el carrusel */
     }
     
     /* Estilos para las imágenes dentro del carrusel */
     .carousel img {
-      max-width: 100%; /* Redimensionar automáticamente las imágenes para ajustarse al contenedor */
-      height: auto; /* Altura automática para mantener la proporción */
+      width: 100%; /* Ajustar las imágenes al 100% del ancho del contenedor */
+      height: 100%; /* Ajustar las imágenes al 100% de la altura del contenedor */
+      object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto y recortándola si es necesario */
     }
     
     /* Estilos para las flechas de navegación */
@@ -74,6 +75,7 @@
 </body>
 </html>
 
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
 {{ partial "short-text" .Params.blurb}}
 
