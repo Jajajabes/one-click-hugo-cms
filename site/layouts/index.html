@@ -2,6 +2,37 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel de Fotos</title>
+  <!-- Incluir los estilos de Slick Carousel (puedes cambiar la URL según tu caso) -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+  <div class="carousel">
+    <div><img src="imagen1.jpg" alt="Imagen 1"></div>
+    <div><img src="imagen2.jpg" alt="Imagen 2"></div>
+    <div><img src="imagen3.jpg" alt="Imagen 3"></div>
+    <!-- Agrega más imágenes dentro de 'div' si deseas tener más fotos en el carrusel -->
+  </div>
+  
+  <!-- Incluir la librería de Slick Carousel (puedes cambiar la URL según tu caso) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+  <script>
+    // Inicializar el carrusel cuando el DOM esté listo
+    $(document).ready(function(){
+      $('.carousel').slick();
+    });
+  </script>
+</body>
+</html>
+
+
 {{ partial "short-text" .Params.blurb}}
 
 {{ partial "2-up" .Params }}
