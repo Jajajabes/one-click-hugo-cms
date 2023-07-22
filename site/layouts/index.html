@@ -13,7 +13,7 @@
   <style>
     /* Estilos para las imágenes dentro del carrusel */
     .carousel img {
-      max-width: 300px; /* Ancho máximo de las imágenes */
+      max-width: 800px; /* Ancho máximo de las imágenes */
       height: auto; /* Altura automática para mantener la proporción */
     }
   </style>
@@ -22,8 +22,8 @@
   <div class="carousel">
     <div><img src="/img/four.jpeg" alt="Imagen 1"></div>
     <div><img src="/img/one.jpg" alt="Imagen 2"></div>
-    <div><img src="/img/tree.jpg" alt="Imagen 3"></div>
-    <div><img src="/img/two.jpg" alt="Imagen 3"></div>
+    <div><img src="/img/tree.png" alt="Imagen 3"></div>
+    <div><img src="/img/two.jpg" alt="Imagen 4"></div>
     <!-- Agrega más imágenes dentro de 'div' si deseas tener más fotos en el carrusel -->
   </div>
   
@@ -34,7 +34,10 @@
   <script>
     // Inicializar el carrusel cuando el DOM esté listo
     $(document).ready(function(){
-      $('.carousel').slick();
+      $('.carousel').slick({
+        autoplay: true, // Habilitar el autoplay
+        autoplaySpeed: 3000, // Definir el tiempo de transición en milisegundos (3 segundos en este ejemplo)
+      })
     });
   </script>
 </body>
